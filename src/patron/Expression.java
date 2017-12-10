@@ -22,4 +22,5 @@ public interface Expression {
 	public ExpressionIterator getPrefixeIterator();
 	public ExpressionIterator getInfixeIterator();
 	public ExpressionIterator getPostfixeIterator();
+
 }

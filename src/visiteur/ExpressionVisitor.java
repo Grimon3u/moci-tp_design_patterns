@@ -12,4 +12,5 @@ public interface ExpressionVisitor {
 	public Object visit(Soustraction sou);
 	public Object visit(Multiplication mult);
 	public Object visit(Division div);
+	
 }

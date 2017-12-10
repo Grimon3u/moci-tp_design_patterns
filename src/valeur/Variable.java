@@ -24,11 +24,11 @@ public class Variable extends Valeur {
 	@Override
 	public String toString() {
 		return this.nom;
-	}
-	 
+	}	 
 
 	@Override
 	public Object accept(ExpressionVisitor ev) {
 		return ev.visit(this);
 	}
+	
 }

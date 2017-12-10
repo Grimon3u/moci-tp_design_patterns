@@ -16,9 +16,9 @@ public class StringPrefixeVisitor extends StringVisitor {
 					concat += "\n" + (String)this.iterator.next().accept(this);
 				}
 			}
-			concat.substring(1);
 			this.iterator = null;
 		}
 		return concat;
 	}
+	
 }

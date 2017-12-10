@@ -12,7 +12,6 @@ public abstract class StringVisitor implements ExpressionVisitor{
 	@Override
 	public String visit(Constante c) {
 		return visit(c, "" + c.getValeur());
-
 	}
 
 	@Override
@@ -41,4 +40,5 @@ public abstract class StringVisitor implements ExpressionVisitor{
 	}
 
 	protected abstract String visit(Expression expr, String concat);
+	
 }

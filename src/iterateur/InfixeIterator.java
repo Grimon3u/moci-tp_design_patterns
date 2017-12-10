@@ -18,7 +18,12 @@ public class InfixeIterator extends ExpressionIterator {
 		this.parcoursFilsGauche = this.expr.getLeftSon().getInfixeIterator();
 		this.parcoursFilsDroit = this.expr.getRightSon().getInfixeIterator();
 	}
-
+	
+	/**
+	 * Constructeur d'un itérateur infixé pour une variable ou une constante.
+	 * @param op
+	 * 		La variable ou constante à itérer.
+	 */
 	public InfixeIterator(Valeur val) {
 		super(val);
 	}

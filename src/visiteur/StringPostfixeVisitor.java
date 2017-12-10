@@ -16,9 +16,9 @@ public class StringPostfixeVisitor extends StringVisitor {
 					concat += "\n" + (String)this.iterator.next().accept(this);
 				}
 			}
-			concat.replaceFirst("\n", "");
 			this.iterator = null;
 		}
 		return concat;
 	}
+	
 }

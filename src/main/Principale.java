@@ -9,7 +9,7 @@ import visiteur.*;
 public class Principale {
 
 	public static void main(String[] args) {
-int x = 8/0;
+
 		Contexte tds = new Contexte();
 		EvaluateVisitor evalV = new EvaluateVisitor(tds);
 		ExpressionVisitor sPostV = new StringPostfixeVisitor();

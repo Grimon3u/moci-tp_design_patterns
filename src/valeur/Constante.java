@@ -20,10 +20,10 @@ public class Constante extends Valeur {
 		return this.valeur;
 	}
 	
+	@Override
 	public String toString() {
 		return "" + this.valeur;
 	}
-	
 	
 	@Override
 	public Object accept(ExpressionVisitor ev) {

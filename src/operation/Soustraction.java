@@ -14,10 +14,10 @@ public class Soustraction extends OperationBinaire {
 		return this.filsGauche.evaluate(tds) - this.filsDroit.evaluate(tds);
 	}
 
+	@Override
 	public String toString() {
 		return "(" + this.filsGauche.toString() + " - " + filsDroit.toString() + ")";
-	}
-	
+	}	
 
 	@Override
 	public Object accept(ExpressionVisitor ev) {

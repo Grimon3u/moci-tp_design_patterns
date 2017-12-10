@@ -29,4 +29,5 @@ public abstract class Valeur implements Expression {
 	public ExpressionIterator getPostfixeIterator() {
 		return new PostfixeIterator(this);
 	}
+	
 }

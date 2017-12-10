@@ -19,8 +19,11 @@ public abstract class ExpressionIterator implements Iterator<Expression> {
 
 	public ExpressionIterator(Valeur val) {
 		this.expr = val;
+		this.parcoursFilsGauche = null;
+		this.parcoursFilsDroit = null;
 	}
 	
 	public abstract boolean hasNext();	
 	public abstract Expression next() throws NoSuchElementException;
+	
 }

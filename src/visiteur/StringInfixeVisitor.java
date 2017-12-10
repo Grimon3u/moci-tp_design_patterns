@@ -20,4 +20,5 @@ public class StringInfixeVisitor extends StringVisitor {
 		}
 		return concat;
 	}
+	
 }

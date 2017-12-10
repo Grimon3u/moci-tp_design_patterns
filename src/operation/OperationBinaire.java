@@ -34,4 +34,5 @@ public abstract class OperationBinaire implements Expression {
 	public ExpressionIterator getPostfixeIterator() {
 		return new PostfixeIterator(this);
 	}
+	
 }
